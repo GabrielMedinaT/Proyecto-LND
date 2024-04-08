@@ -1,0 +1,52 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  z-index: 100;
+  position: sticky;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.menulist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+}
+.menulist li {
+  margin: 0 1rem;
+  font-size: 2.2rem;
+}
+li {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.logo {
+  background-color: aqua;
+  width: 10%;
+  height: 15vh;
+}
