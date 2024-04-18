@@ -5,7 +5,7 @@ import About from "./Components/About";
 import { useState } from "react";
 import Left from "./Components/Left";
 import ISS from "./Components/ISS";
-
+import Mas from "./Components/Mas";
 function App() {
   const [render, setRender] = useState("home");
   console.log(render);
@@ -16,6 +16,7 @@ function App() {
       {render === "Home" && <Earth />}
       {render === "About" && <About />}
       {render === "iss" && <ISS />}
+      {render === "mas" && <Mas />}
     </div>
   );
 }
