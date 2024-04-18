@@ -1,0 +1,23 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem 2rem;
+  background-color: #f70202;
+  color: #fff;
+  position: fixed;
+  width: 45vw;
+  height: 90vh;
+  margin-left: 25vw;
+  z-index: -1;
+}

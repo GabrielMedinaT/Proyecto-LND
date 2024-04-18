@@ -25,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  margin-left: 20%;
 }
 .menulist {
   display: flex;
@@ -44,9 +45,16 @@ li {
 li:hover {
   cursor: pointer;
   transform: scale(1.1);
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 9px #000dff,
+    0 0 3px #000dff, 0 0 4px #000dff, 0 0 5px #000dff, 0 0 7px #000dff;
 }
 .logo {
-  background-color: aqua;
+  background-image: url("../sources/images/near.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   width: 10%;
   height: 15vh;
 }
