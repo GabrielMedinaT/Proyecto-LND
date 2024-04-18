@@ -9,8 +9,10 @@
 }
 .mas {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   background: #0ed729;
+  z-index: 10;
 }

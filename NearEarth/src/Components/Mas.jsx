@@ -35,15 +35,21 @@ const Mas = () => {
 
   return (
     <div className="mas">
-      <label htmlFor="datePicker">Selecciona una fecha:</label>
-      <input
-        type="date"
-        id="datePicker"
-        value={selectedDate}
-        onChange={handleDateChange}
-      />
-      <br />
-      {imageUrl && <img src={imageUrl} alt="NASA APOD" />}
+      <div className="fecha">
+        <label htmlFor="datePicker">Selecciona una fecha:</label>
+        <input
+          type="date"
+          id="datePicker"
+          value={selectedDate}
+          onChange={handleDateChange}
+        />
+      </div>
+      <div className="foto">
+        {" "}
+        {imageUrl && (
+          <img src={imageUrl} alt="NASA APOD" width={500} height={500} />
+        )}
+      </div>
     </div>
   );
 };
