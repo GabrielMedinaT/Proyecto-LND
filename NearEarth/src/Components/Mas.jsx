@@ -21,7 +21,7 @@ const Mas = () => {
           {
             params: {
               api_key: "Vcj8GJ8OM5W36S4RmnrJu8y1HyULtyLmUdbTadMs",
-              date: selectedDate, 
+              date: selectedDate,
             },
           }
         );
@@ -43,7 +43,9 @@ const Mas = () => {
   return (
     <div className="mas">
       <div className="fecha">
-        <label htmlFor="datePicker">Selecciona una fecha:</label>
+        <label htmlFor="datePicker" defaultValue={Date.now}>
+          Selecciona una fecha:
+        </label>
         <input
           type="date"
           id="datePicker"
