@@ -3,7 +3,7 @@ import "./ISS.css";
 const Earth = () => {
   return (
     <div className="iss">
-      <div className="foto"></div>
+      <div className="fotoISS"></div>
       <div className="desc">
         <h1>ISS</h1>
         <p>

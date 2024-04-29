@@ -16,7 +16,7 @@ const Left = ({ setRender }) => {
         <li>Galileo</li>
         <li>GLONASS</li>
         <li>Beidou</li>
-        <li onClick={() => changeRender("mas")}>Mas...</li>
+        <li onClick={() => changeRender("mas")}>Photo of the Day</li>
       </ul>
       <ul className="Asteroides">
         <h2>Asteroides</h2>
