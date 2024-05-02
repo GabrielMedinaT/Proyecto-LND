@@ -9,9 +9,9 @@
 }
 .mas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   height: 80vh;
   background-image: url("../sources/images/fondoMas.jpeg");
   background-size: cover;
@@ -21,7 +21,7 @@
   margin-left: 25vw;
 }
 .titluloPOD {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: white;
   margin-top: 2rem;
 }
@@ -31,6 +31,30 @@ label {
   margin-top: 1rem;
 }
 
-foto{
-    border: ;
+.fotoODAY {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 50vw;
+}
+.fecha {
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 2vh;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+}
+.fotoDelDia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin: 0vh auto;
 }

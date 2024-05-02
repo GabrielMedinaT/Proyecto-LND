@@ -9,6 +9,7 @@ const Left = ({ setRender }) => {
     <div className="Left">
       <ul className="Satelites">
         <h2>Satélites</h2>
+      
         <li onClick={() => changeRender("iss")}>ISS</li>
         <li>Hubble</li>
         <li>Starlink</li>

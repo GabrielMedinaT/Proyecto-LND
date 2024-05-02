@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+
 import "./Mas.css";
 
 const Mas = () => {
@@ -20,7 +21,7 @@ const Mas = () => {
           "https://api.nasa.gov/planetary/apod",
           {
             params: {
-              api_key: "Vcj8GJ8OM5W36S4RmnrJu8y1HyULtyLmUdbTadMs",
+              api_key: import.meta.env.VITE_NASA_API_KEY,
               date: selectedDate,
             },
           }
@@ -47,17 +48,26 @@ const Mas = () => {
           Selecciona una fecha:
         </label>
         <input
+          className="fecha"
           type="date"
           id="datePicker"
           value={selectedDate}
           onChange={handleDateChange}
         />
       </div>
-      <h2 className="titluloPOD">{title}</h2>
-      <div className="foto" style={backgroundStyle}>
-        {imageUrl && (
-          <img src={imageUrl} alt="NASA APOD" width={800} height={600} />
-        )}
+      <div className="fotoDelDia">
+        <h2 className="titluloPOD">{title}</h2>
+        <div>
+          {imageUrl && (
+            <img
+              className="fotoODAY"
+              src={imageUrl}
+              alt="NASA APOD"
+              width={800}
+              height={600}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

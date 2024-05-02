@@ -12,6 +12,7 @@ const NavBar = ({ setRender }) => {
           <li onClick={() => changeRender("Home")}>Home</li>
           <li onClick={() => changeRender("About")}>About</li>
           <li onClick={() => changeRender("Contact")}>Contact</li>
+          <li onClick={() => changeRender("registro")}>Registro</li>
         </ul>
       </div>
       <div></div>
