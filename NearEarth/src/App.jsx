@@ -5,18 +5,27 @@ import About from "./Components/About";
 import { useState } from "react";
 import Left from "./Components/Left";
 import ISS from "./Components/ISS";
-
+import Mas from "./Components/Mas";
+import Footer from "./Components/Footer";
+import SolarSystem from "./Components/SolarSystem";
+import Registro from "./Components/Registro";
 function App() {
   const [render, setRender] = useState("home");
+
   console.log(render);
   return (
-    <div className="App">
+    <>
       <NavBar render={render} setRender={setRender} />
-      <Left render={render} setRender={setRender} />
-      {render === "Home" && <Earth />}
-      {render === "About" && <About />}
-      {render === "iss" && <ISS />}
-    </div>
+      <div className="App">
+        <Left render={render} setRender={setRender} />
+        {render === "Home" && <SolarSystem />}
+        {render === "About" && <About />}
+        {render === "iss" && <ISS />}
+        {render === "mas" && <Mas />}
+        {render === "registro" && <Registro />}
+      </div>
+      <Footer />
+    </>
   );
 }
 
